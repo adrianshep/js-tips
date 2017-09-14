@@ -37,6 +37,8 @@ function generateNumber() {
 // 3. Show the tip
 function generateTip() {
 	var tip = tipsList[generateNumber()];
+	var tipElement = document.querySelector('.js-tip');
+	tipElement.innerHTML = tip;
 }
 
 // Tip button click
