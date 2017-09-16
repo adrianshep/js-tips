@@ -51,7 +51,9 @@ function generateTip() {
 // 3a. Subtract 1 from the tipLimit
 // 3b. If the tipLimit is still above or equal to 0, generate a new tip
 // 3c. If not, change the button text and look
-
+function onTipButtonClick() {
+	var tipButton = document.querySelector('.tip-button');
+}
 
 // Get the first tip
 generateTip();
