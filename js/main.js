@@ -53,7 +53,14 @@ function generateTip() {
 // 3c. If not, change the button text and look
 function onTipButtonClick() {
 	var tipButton = document.querySelector('.tip-button');
+	tipButton.addEventListener('click', function() {
+  	console.log("I am the tip button");
+	});
 }
+
+onTipButtonClick();
+
+
 
 // Get the first tip
 generateTip();
