@@ -54,7 +54,14 @@ function generateTip() {
 function onTipButtonClick() {
 	var tipButton = document.querySelector('.tip-button');
 	tipButton.addEventListener('click', function() {
-  	console.log("I am the tip button");
+		tipLimit = tipLimit - 1;
+		if (tipLimit >= 0) {
+			generateTip();
+			if (tipLimit === 0) {
+				tipButton.innerHTML = "See you in another tab!";
+				tipButton.classList.add('disabled');
+			}
+		}
 	});
 }
 
